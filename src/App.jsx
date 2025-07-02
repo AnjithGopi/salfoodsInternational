@@ -1,15 +1,18 @@
 
 import './App.css'
 import Contact from './pages/Contact'
+// import StickyBackgroundPage from './pages/Fam'
 import Footer from './pages/Footer'
-  import Header from './pages/Header'
+import Header from './pages/Header'
 
 function App() {
-  
+
 
   return (
     <>
-     <h1>hello</h1>
+  <Header />
+  <Contact />
+  <Footer/>
     </>
   )
 }
