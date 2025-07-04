@@ -33,9 +33,7 @@ const Contact = () => {
     <section id="contact" className="py-32 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-green-50 rounded-full text-[#E5E1DA] text-sm font-medium mb-6">
-            Contact Us
-          </div>
+          
           <h2 className="text-5xl font-light text-gray-900 mb-6">
             Let's Start a
             <span className="font-semibold block">Conversation</span>

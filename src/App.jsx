@@ -7,6 +7,7 @@ import Footer from "./pages/Footer";
 import Header from "./pages/Header";
 import Body from "./pages/Body";
 import { useEffect, useRef, useState } from "react";
+import Products from "./pages/Products";
 
 function App() {
   const bodyRef = useRef(null);
@@ -31,6 +32,7 @@ function App() {
     <>
       <Header isSticky={isSticky} />
       <Body ref={bodyRef} />
+      <Products/>
       <Contact />
       <Footer />
     </>
