@@ -24,12 +24,10 @@ const Header = ({isSticky}) => {
           {/* Logo Section */}
           <div className="flex items-center">
             <img 
-              src="/no bg.png" 
+              src="/NITHU logo-01.png" 
               alt="Sal Foods International" 
-              className="h-20 w-auto object-contain"
-              style={{
-                filter: 'drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.08))'
-              }}
+              className="h-24 w-auto object-contain"
+             
             />
           </div>
 
