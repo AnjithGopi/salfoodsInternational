@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const Header = () => {
+const Header = ({isSticky}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigationItems = [
@@ -10,21 +10,24 @@ const Header = () => {
     { name: "Products", href: "#products" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
+    
   ];
 
   return (
-    <header className="bg-white/50 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <header
+      className={`bg-white/50 backdrop-blur-md shadow-sm z-50 border-b border-gray-100 ${
+        isSticky ? "sticky top-0" : "static"
+      }`}
+    >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center">
             <img 
-              src="/no bg.png" 
+              src="/NITHU logo-01.png" 
               alt="Sal Foods International" 
-              className="h-20 w-auto object-contain"
-              style={{
-                filter: 'drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.08))'
-              }}
+              className="h-24 w-auto object-contain"
+             
             />
           </div>
 
