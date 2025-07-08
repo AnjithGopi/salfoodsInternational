@@ -40,13 +40,13 @@ const PremiumCTASection = () => {
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </button> */}
           
-          <button className="group relative bg-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 backdrop-blur-sm border border-white/30 hover:border-white/50 flex items-center space-x-2">
-            <span>Contact Us</span>
+          <button className="group relative bg-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 backdrop-blur-sm border border-white/30 hover:border-white/50 flex items-center space-x-2 cursor-pointer">
+            <a href="#contact">Contact Us</a>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </button>
         </div>
         
-        {/* Decorative elements */}
+        {/* Decorative elements
         <div className="mt-8 flex justify-center space-x-8 opacity-60">
           <div className="text-center">
             <div className="text-2xl font-bold text-white">500+</div>
@@ -62,7 +62,7 @@ const PremiumCTASection = () => {
             <div className="text-2xl font-bold text-white">24/7</div>
             <div className="text-sm text-white/80">Support</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

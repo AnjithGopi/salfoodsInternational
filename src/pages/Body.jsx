@@ -21,7 +21,7 @@ const Body = forwardRef((props, ref) => {
         <Slider {...settings}>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
+              src="/cor1.jpeg" 
               alt="Business Image 1"
               className="w-full h-154 object-cover"
             />
@@ -43,7 +43,31 @@ const Body = forwardRef((props, ref) => {
         </Slider>
         
         {/* Dark Overlay for Better Text Readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-40 z-10">
+           <Slider {...settings}>
+          <div>
+            <img 
+              src="/cor1.jpeg" 
+              alt="Business Image 1"
+              className="w-full h-154 object-cover"
+            />
+          </div>
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              alt="Business Image 2"
+              className="w-full h-154 object-cover"
+            />
+          </div>
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1664447972779-316251bd8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80" 
+              alt="Business Image 3"
+              className="w-full h-154 object-cover"
+            />
+          </div>
+        </Slider>
+        </div>
         
         {/* Business Details Overlay - Left Side */}
         <div className="absolute inset-0 z-20 flex items-center">

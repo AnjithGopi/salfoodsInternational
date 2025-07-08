@@ -140,19 +140,7 @@ function Products() {
           ))}
         </div>
 
-        {/* Bottom CTA Section */}
-        {/* <div className="mt-16 text-center bg-[#A7C1A8] text-white rounded-2xl p-8">
-          <h3 className="text-2xl font-bold mb-4">
-            Can't find what you're looking for?
-          </h3>
-          <p className="mb-6 max-w-2xl mx-auto opacity-90">
-            Browse our full catalog of premium food products, seasonal
-            specialties, and chef-curated collections. New items added weekly!
-          </p>
-          <button className="bg-white text-gray-900 px-8 py-3 rounded-xl font-semibold hover:bg-[#D1D8BE] transition-colors cursor-pointer">
-            Contact Us
-          </button>
-        </div> */}
+      
 
         <PremiumCTASection/>
       </div>
