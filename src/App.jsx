@@ -9,6 +9,7 @@ import Body from "./pages/Body";
 import { useEffect, useRef, useState } from "react";
 import Products from "./pages/Products";
 import AboutUs from "./pages/About";
+import Location from "./pages/Location"
 
 function App() {
   const bodyRef = useRef(null);
@@ -35,6 +36,7 @@ function App() {
       <Body ref={bodyRef} />
       <Products/>
       <AboutUs/>
+      <Location/>
       <Contact />
       <Footer />
     </>

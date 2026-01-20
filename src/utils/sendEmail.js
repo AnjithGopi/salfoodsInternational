@@ -8,7 +8,7 @@ import {
 const sendEmail = async (e) => {
   try {
 
-    console.log(e.target)
+    console.log("e.target in send Email function:>>>",e.target)
    
     const result = await emailjs.sendForm(
       gmailServiceId,
@@ -19,7 +19,7 @@ const sendEmail = async (e) => {
     return result;
   } catch (error) {
     console.error("Email sending failed:", error);
-    throw error; // Re-throw to handle in the component
+    throw error; 
   }
 };
 
