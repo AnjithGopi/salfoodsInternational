@@ -7,6 +7,8 @@ import {
 
 const sendEmail = async (e) => {
   try {
+
+    console.log(e.target)
    
     const result = await emailjs.sendForm(
       gmailServiceId,

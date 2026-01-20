@@ -6,7 +6,8 @@ function Products() {
   const products = [
     {
       id: 1,
-      name: "Palappam Batter",
+      name: "Palappam",
+      src: "/Appam.webp",
       description:
         "Handcrafted with organic flour and traditional fermentation methods",
       price: "$8.99",
@@ -23,8 +24,9 @@ function Products() {
     {
       id: 2,
       name: "Palappam Batter",
+      src: "/appam 1.jpg",
       description:
-        "Three premium sauces: Truffle Alfredo, Spicy Arrabbiata, and Basil Pesto",
+        " Perfectly fermented Palappam Batter ,made with premium rice and coconut for authentic Kerala-style appams",
       price: "$24.99",
       originalPrice: "$32.99",
       rating: 4.8,
@@ -38,9 +40,10 @@ function Products() {
     },
     {
       id: 3,
-      name: "Palappam Batter",
+      name: "Grated Coconut",
+      src: "/hero-coconut.webp",
       description:
-        "Grass-fed Wagyu beef patties with our signature seasoning blend",
+        "Freshly grated coconut ,pure, creamy, and ready to enhance your traditional dishes",
       price: "$18.99",
       originalPrice: "$24.99",
       rating: 4.9,
@@ -55,12 +58,12 @@ function Products() {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="products" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Featured Products
+            Our Products
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover our carefully curated selection of premium food products,
@@ -68,9 +71,7 @@ function Products() {
           </p>
           <div className="mt-8 flex items-center justify-center space-x-2">
             <ChefHat className="w-6 h-6 text-orange-500" />
-            <span className="text-gray-600 font-medium">
-              Chef-Approved Quality
-            </span>
+            <span className="text-gray-600 font-medium">FSSAI Approved</span>
           </div>
         </div>
 
@@ -84,7 +85,7 @@ function Products() {
               {/* Product Image */}
               <div className="relative ">
                 <img
-                  src="/appam 1.jpg"
+                  src={product.src}
                   alt={product.name}
                   className="w-full h-90 object-cover "
                 />
@@ -107,7 +108,7 @@ function Products() {
               {/* Product Info */}
               <div className="p-6">
                 {/* Product Name & Description */}
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl justify-center text-center font-bold text-gray-900 mb-2">
                   {product.name}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 line-clamp-2">
@@ -139,10 +140,6 @@ function Products() {
             </div>
           ))}
         </div>
-
-      
-
-        <PremiumCTASection/>
       </div>
     </section>
   );

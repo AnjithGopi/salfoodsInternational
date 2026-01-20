@@ -145,12 +145,9 @@ const Contact = () => {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 lg:mb-20">
-          <div className="inline-block bg-[#2D5016] text-white px-6 py-2 rounded-full text-sm font-medium mb-6">
-            Get In Touch
-          </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Let's Grow Your
-            <span className="block bg-gradient-to-r from-[#2D5016] to-[#4A7C1C] bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#A7C1A8] via-[#8DB68E] to-[#6B9B6D] bg-clip-text text-transparent">
               Food Business
             </span>
           </h2>
@@ -203,7 +200,7 @@ const Contact = () => {
             </div>
 
             {/* Why Choose Us */}
-            <div className="bg-gradient-to-br from-[#2D5016] to-[#4A7C1C] rounded-2xl p-6 lg:p-8 text-white shadow-xl">
+            <div className="bg-[#6B9B6D] rounded-2xl p-6 lg:p-8 text-white shadow-xl">
               <h3 className="text-lg lg:text-xl font-bold mb-4 lg:mb-6">
                 Why Choose Us?
               </h3>
@@ -404,7 +401,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-[#2D5016] to-[#4A7C1C] hover:from-[#1f3610] hover:to-[#2D5016] text-white py-3 lg:py-4 px-6 lg:px-8 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed text-sm lg:text-base"
+                  className="w-full bg-[#6B9B6D] hover:to-[#2D5016] text-white py-3 lg:py-4 px-6 lg:px-8 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl disabled:opacity-70  text-sm lg:text-base cursor-pointer"
                 >
                   {isSubmitting ? (
                     <>

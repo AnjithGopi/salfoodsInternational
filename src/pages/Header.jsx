@@ -6,7 +6,6 @@ const Header = ({isSticky}) => {
 
   const navigationItems = [
     { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
     { name: "Products", href: "#products" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
@@ -32,7 +31,7 @@ const Header = ({isSticky}) => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center justify-center flex-1">
+            <div className="hidden lg:flex items-center justify-center  flex-1">
               <div className="flex items-center space-x-10">
                 {navigationItems.map((item) => (
                   <a
