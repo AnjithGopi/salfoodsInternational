@@ -1,13 +1,14 @@
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import {contact} from "../contact/Address"
 
 const Footer = () => {
-  const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
-    { name: "Products", href: "#products" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" }
-  ];
+  // const quickLinks = [
+  //   { name: "Home", href: "#home" },
+  //   { name: "Services", href: "#services" },
+  //   { name: "Products", href: "#products" },
+  //   { name: "About", href: "#about" },
+  //   { name: "Contact", href: "#contact" }
+  // ];
 
   const services = [
     "Food Distribution",
@@ -41,32 +42,33 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <MapPin className="text-gray-400" size={16} />
               <div className="text-gray-400 text-sm">
-                <p>Al Qusais Industrial Area</p>
-                <p>P.O. Box 12345, Dubai, UAE</p>
+                <p>{contact.address}</p>
+                {/* <p>P.O. Box 12345, Dubai, UAE</p> */}
               </div>
             </div>
             
             <div className="flex items-center space-x-2">
               <Phone className="text-gray-400" size={16} />
-              <p className="text-gray-400 text-sm">+971 4 123 4567</p>
+              <p className="text-gray-400 text-sm">{contact.mobile}</p>
+              <p className="text-gray-400 text-sm">{contact.mobile2}</p>
             </div>
             
             <div className="flex items-center space-x-2">
               <Mail className="text-gray-400" size={16} />
-              <p className="text-gray-400 text-sm">info@salfoodsinternational.com</p>
+              <p className="text-gray-400 text-sm">{contact.email}</p>
             </div>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold mb-3 text-gray-300">Quick Links</h4>
+            {/* <h4 className="text-sm font-semibold mb-3 text-gray-300">Quick Links</h4> */}
             <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
+              {/* {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
                     {link.name}
                   </a>
                 </li>
-              ))}
+              ))} */}
             </ul>
           </div>
 
@@ -85,7 +87,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-4 mb-4 md:mb-0">
-              <a href="#" className="w-8 h-8 bg-gray-800 rounded flex items-center justify-center hover:bg-gray-700 transition-colors">
+              {/* <a href="#" className="w-8 h-8 bg-gray-800 rounded flex items-center justify-center hover:bg-gray-700 transition-colors">
                 <Facebook size={16} />
               </a>
               <a href="#" className="w-8 h-8 bg-gray-800 rounded flex items-center justify-center hover:bg-gray-700 transition-colors">
@@ -96,7 +98,7 @@ const Footer = () => {
               </a>
               <a href="#" className="w-8 h-8 bg-gray-800 rounded flex items-center justify-center hover:bg-gray-700 transition-colors">
                 <Linkedin size={16} />
-              </a>
+              </a> */}
             </div>
             <div className="text-gray-500 text-sm">
               © 2025 Sal Foods International. All rights reserved.

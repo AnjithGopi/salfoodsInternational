@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import sendEmail from "../utils/sendEmail";
+import {contact }from "../contact/Address"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+971 4 123 4567", "+971 50 123 4567"],
+      details: [contact.mobile,contact.mobile2],
       color: "bg-emerald-50 text-emerald-600 border-emerald-200",
       description: "Call us for immediate assistance",
     },
@@ -38,8 +39,8 @@ const Contact = () => {
       icon: Mail,
       title: "Email",
       details: [
-        "info@salfoodsinternational.com",
-        "sales@salfoodsinternational.com",
+        contact.email,
+        contact.webSite,
       ],
       color: "bg-blue-50 text-blue-600 border-blue-200",
       description: "Reach out via email for detailed inquiries",
@@ -47,17 +48,17 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      details: ["Al Qusais Industrial Area", "P.O. Box 12345, Dubai, UAE"],
+      details: [contact.address,contact.pincode],
       color: "bg-amber-50 text-amber-600 border-amber-200",
       description: "Visit our state-of-the-art facility",
     },
-    {
-      icon: Clock,
-      title: "Business Hours",
-      details: ["Mon - Fri: 8:00 AM - 6:00 PM", "Sat: 8:00 AM - 2:00 PM"],
-      color: "bg-purple-50 text-purple-600 border-purple-200",
-      description: "We're here when you need us",
-    },
+    // {
+    //   icon: Clock,
+    //   title: "Business Hours",
+    //   details: ["Mon - Fri: 8:00 AM - 6:00 PM", "Sat: 8:00 AM - 2:00 PM"],
+    //   color: "bg-purple-50 text-purple-600 border-purple-200",
+    //   description: "We're here when you need us",
+    // },
   ];
 
   const inquiryTypes = [
