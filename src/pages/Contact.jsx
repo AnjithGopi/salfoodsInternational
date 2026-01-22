@@ -209,15 +209,10 @@ const Contact = () => {
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-sm">
-                    Premium quality products with international certifications
+                    Premium quality products with FSSAI certifications
                   </p>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-sm">
-                    Reliable supply chain across Middle East and beyond
-                  </p>
-                </div>
+             
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-sm">
@@ -227,7 +222,7 @@ const Contact = () => {
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-sm">
-                    Expert team with 15+ years in food industry
+                    Expert team with 20+ years in food industry
                   </p>
                 </div>
               </div>
