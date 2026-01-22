@@ -12,7 +12,6 @@ import AboutUs from "./pages/About";
 import Location from "./pages/Location";
 import WhatsAppButton from "./pages/WhatsappButton";
 
-
 function App() {
   const bodyRef = useRef(null);
   const [isSticky, setIsSticky] = useState(true);
@@ -42,6 +41,7 @@ function App() {
       <Contact />
       <Footer />
       <WhatsAppButton/>
+
     </>
   );
 }

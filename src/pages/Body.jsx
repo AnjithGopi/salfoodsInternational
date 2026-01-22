@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import { forwardRef, useRef } from "react";
 import PremiumHeroSection from "./description";
 
-const Body = forwardRef((props, ref) => {
+const Body = forwardRef((props, ref,) => {
   const sliderRef = useRef(null);
 
   const settings = {
