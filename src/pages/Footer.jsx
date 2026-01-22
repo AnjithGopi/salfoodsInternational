@@ -101,7 +101,7 @@ const Footer = () => {
               </a> */}
             </div>
             <div className="text-gray-500 text-sm">
-              © 2025 Sal Foods International. All rights reserved.
+              © 2026 Sal Foods International. All rights reserved.
             </div>
           </div>
         </div>
