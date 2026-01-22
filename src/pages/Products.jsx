@@ -24,7 +24,7 @@ function Products() {
     {
       id: 2,
       name: "Palappam Batter",
-      src: "/appam 1.jpg",
+      src:"/appambatter.jpeg",
       description:
         " Perfectly fermented Palappam Batter ,made with premium rice and coconut for authentic Kerala-style appams",
       price: "$24.99",
