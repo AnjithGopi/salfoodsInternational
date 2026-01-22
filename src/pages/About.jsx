@@ -4,7 +4,7 @@ import PalappamCTASection from "./palappam";
 
 const AboutUs = forwardRef((props, ref) => {
   return (
-    <section
+    <section id="about"
       ref={ref}
       className="bg-gradient-to-b from-gray-50 to-white py-20 px-6 md:px-12 lg:px-20"
     >
