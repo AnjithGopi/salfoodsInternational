@@ -9,7 +9,9 @@ import Body from "./pages/Body";
 import { useEffect, useRef, useState } from "react";
 import Products from "./pages/Products";
 import AboutUs from "./pages/About";
-import Location from "./pages/Location"
+import Location from "./pages/Location";
+import WhatsAppButton from "./pages/WhatsappButton";
+
 
 function App() {
   const bodyRef = useRef(null);
@@ -34,11 +36,12 @@ function App() {
     <>
       <Header isSticky={isSticky} />
       <Body ref={bodyRef} />
-      <Products/>
-      <AboutUs/>
-      <Location/>
+      <Products />
+      <AboutUs />
+      <Location />
       <Contact />
       <Footer />
+      <WhatsAppButton/>
     </>
   );
 }
